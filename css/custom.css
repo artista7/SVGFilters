@@ -1,0 +1,34 @@
+.clearfix{
+  display:block;
+  clear:both;
+}
+
+#container{
+  background: #ffca96;
+  padding: 250px 0;
+}
+h1{
+  font-size: 4em;
+  text-align: center;
+  font-family: "Raleway dots";
+  line-height:1em;
+  margin: 0;
+}
+
+#object, img{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.svgs{
+  filter: url(../index.html#svg);
+  -webkit-filter:(#svg);
+}
+
+#object{
+  border-radius: 50%;
+  width:200px;
+  height: 200px;
+  border: 10px solid #a5b59b;
+}

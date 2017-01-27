@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=""viewport" content=""width=device-width, initial-scale=1.0" />
+    <title>SVG Filters</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <[endif]-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway+Dots&amp;subset=latin-ext" type="text/css">
+    <script src"js/modernizr-custom.js"></script>
+    <script src"js/jquery-3.1.1.min.js"></script>
+    <script src"js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="" id="container">
+      <div class="row">
+        <div class="large-4-columns">
+          <h1 class="svgs">some fancy text </h1>
+        </div>
+        <div class="large-4-columns">
+          <div  id="object" class="svgs"></div>
+        </div>
+        <div class="large-4-columns">
+          <img src="images/traveller.png" class="svgs" alt="">
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="https://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="svg" x="0" y="0">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="0.4"/>
+          <feColorMatrix in="A" type="saturate" values="0.5";/>
+          <!--<feColorMatrix in="A" type="luminanceToAlpha";/>
+          <feConvolveMatrix order="3" kernelMatrix="1 0 0 0 0 0 0 0 1" />-->
+        </filter>
+      </defs>
+    </svg>
+  </body>
+  </html>
